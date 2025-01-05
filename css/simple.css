@@ -1,39 +1,42 @@
 /* Global variables. */
 :root {
   /* Set sans-serif & mono fonts */
-  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+  --sans-font: -apple-system, BlinkMacSystemFont, Montserrat, "Avenir Next", Avenir,
     "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
     "Helvetica Neue", sans-serif;
   --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   --standard-border-radius: 5px;
+  /* Set cursive and fantasy fonts */
+  --cursive-font: "Apple Chancery", "URW Chancery L", cursive;
+  --fantasy-font: Luminari, fantasy;
 
   /* Default (light) theme */
-  --bg: #fff;
-  --accent-bg: #f5f7ff;
-  --text: #212121;
-  --text-light: #585858;
+  --bg: #e1e2e4;
+  --accent-bg: #f5f9ff;
+  --text: #131d2e;
+  --text-light: #21314d;
   --border: #898EA4;
   --accent: #0d47a1;
   --accent-hover: #1266e2;
   --accent-text: var(--bg);
-  --code: #d81b60;
+  --code: #1bd82b;
   --preformatted: #444;
   --marked: #ffdd33;
-  --disabled: #efefef;
+  --disabled: #c6cbd1;
 }
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --bg: #212121;
-    --accent-bg: #2b2b2b;
+    --bg: #21314d;
+    --accent-bg: #30456b;
     --text: #dcdcdc;
-    --text-light: #ababab;
+    --text-light: #9fa5aa;
     --accent: #ffb300;
     --accent-hover: #ffe099;
     --accent-text: var(--bg);
-    --code: #f06292;
+    --code: #1bd82b;
     --preformatted: #ccc;
     --disabled: #111;
   }
@@ -599,6 +602,22 @@ cite {
 
 dt {
     color: var(--text-light);
+}
+
+/* Class to center elements */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Classes for stylized fonts */
+.cursive {
+  font-family: var(--cursive-font);
+}
+
+.fantasy {
+  font-family: var(--fantasy-font);
 }
 
 /* Use mono font for code elements */
