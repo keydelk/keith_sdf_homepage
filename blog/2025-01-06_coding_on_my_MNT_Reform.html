@@ -17,12 +17,54 @@
       <h1>Keith's Blog</h1>
     </header>
     <main>
-      <h2>Mess of configuring Emacs</h2>
-	<p>
-	  So a few years ago, when I wanted to really learn how a computer works from 
-	  the ground up, a got an
-	  <a href="https://shop.mntre.com/products/mnt-reform">MNT Reform</a> laptop.
-	</p>
+      <h2>My MNT Reform Laptop</h2>
+	    <p>
+	      So a few years ago, when I wanted to really learn how a computer works 
+        from the ground up, a got an 
+        <a href="https://shop.mntre.com/products/mnt-reform">MNT Reform</a> laptop.
+      </p>
+      <figure>
+        <img src="../images/MNT_Reform.jpg" alt="Picture of my MNT Reform with VSCodium open to the in-progress source code of this page">
+        <figcaption>My unusual MNT Laptop. One of the most open-source computers available, though not particularly powerful.</figcaption>
+      </figure>
+      <p>
+        I really like the machine, particularly the radically open nature of the product. 
+        Not only does it use all open-source software, they publish schematics and even 
+        cad files if you want to 3d print replacement parts. However, the tradeoff for 
+        this openness is that the machine isn't exactly a powerhouse. The i.MX8M 
+        processor module in my version gets the job done for most of my needs, 
+        but the 4 ARM cores running at only 1.5 GHz doesn't exactly have cutting edge 
+        performance. For this reason, the first version of the handbook recommended 
+        against running heavier applications, including electron-based software 
+        (such as VS Code). For that reason, I had mostly been learning to use other 
+        editors (such as Emacs) for coding on the machine.
+      </p>
+      <h3>Emacs mess</h3>
+      <p>
+        For Python coding, I discovered I really liked the Emacs editor with they Elpy 
+        package (from this tutorial: 
+        <a href="https://realpython.com/emacs-the-best-python-editor/">Emacs: The Best Python Editor?</a> 
+        ). So, I thought that I would do the same for editing my website. So I did 
+        a quick Duck-Duck-Go search for configuring Emacs for web development. 
+        I found quite a few tutorials, so I picked one that looked good and 
+        tried to follow along. The one I picked was <a href="https://www.ovistoica.com/blog/2024-7-05-modern-emacs-typescript-web-tsx-config">
+          Modern Emacs Typescript Web (React) Config with lsp-mode, treesitter, tailwind, TSX & more.
+        </a>
+      </p>
+      <p>
+        So, maybe I bit off a bit more than I could chew, because I spent over an hour 
+        trying to configure emacs with these packages (and learning what lsp-mode is and
+        what an lsp server is), and gave up when emacs kept throwing errors.
+      </p>
+      <h3>Trying VSCodium on my Reform</h3>
+      <p>
+        Wanting to keep my Reform as FOSS pure as possible, I decided to install 
+        <a href="https://vscodium.com/">VSCodium</a> instead of VS Code. I was able to 
+        install following the instructions for Debian. The first time opening the 
+        program was a bit slow, and adding extentions isn't exacly fun on this machine. 
+        Still, it runs well enough that it doesn't really slow me down.
+      </p>
+      <a href="index.html" class="button">&larr; Back to the blog</a>
     </main>
     <footer>
       <p>Author: Keith Keydel</p>
