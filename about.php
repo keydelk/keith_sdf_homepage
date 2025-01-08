@@ -4,19 +4,13 @@
         <meta charset="UTF-8">
         <title>About Keith</title>
         <meta name="author" content="Keith Keydel">
-        <link rel="stylesheet" href="css/simple.css">
+        <link rel="stylesheet" href="/css/simple.css">
     </head>
     <body>
         <header>
-            <nav>
-				<a href="index.html">Home</a>
-                <a href="about.html" aria-current="page">About Keith</a>
-				<a href="Tilly_Graduation/index.html">Tilly's Graduation</a>
-                <a href="blog/index.html">Blog</a>
-			</nav>
-            <h1>
-                About Keith
-            </h1>
+            <?php include "nav.php" ?>
+
+            <h1>About Keith</h1>
         </header>
         <main>
             <figure>
@@ -31,9 +25,8 @@
 				philosophy
             </p>
         </main>
-        <footer>
-			<p>Author: Keith Keydel</p>
-     		<p>Last Updated: <time datetime="2025-01-05">1/5/2025</time></p>
-		</footer>
+        
+        <?php include "footer.php"?>
+        
     </body>
 </html>

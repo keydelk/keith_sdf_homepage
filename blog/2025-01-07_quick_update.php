@@ -9,12 +9,8 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="../about.html">About Keith</a>
-        <a href="../Tilly_Graduation/index.html">Tilly's Graduation</a>
-        <a href="index.html" aria-current="true">Blog</a>
-      </nav>
+      <?php include "../nav.php" ?>
+      
       <!-- Include Title in H1-->
       <h1>A quick update before work</h1>
     </header>
@@ -46,7 +42,7 @@
        <p>
         There will probably be more to come, but I think these are good next steps.
        </p>
-      <a href="index.html" class="button">&larr; Back to the blog</a>
+      <a href="index.php" class="button">&larr; Back to the blog</a>
     </main>
     <footer>
       <p>Author: Keith Keydel</p>

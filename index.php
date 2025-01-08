@@ -11,23 +11,24 @@
 	</head>
 	<body>
 		<header>
-			<nav>
-				<a href="index.html" aria-current="page">Home</a>
-				<a href="about.html">About Keith</a>
-				<a href="Tilly_Graduation/index.html">Tilly's Graduation</a>
-				<a href="blog/index.html">Blog</a>
-			</nav>
+			<?php include "nav.php" ?>
+
 			<h1>Keith's Homepage</h1>
-			<p>Hosting for this site is provided by <a target=new href="http://sdf.org">The SDF Public Access UNiX System</a></p>
+			<p>
+				Hosting for this site is provided by 
+				<a target=new href="http://sdf.org">The SDF Public Access UNIX System</a>
+			</p>
 		</header>
 
 		<main>
-			<p>Inspired by <a href="https://htmlforpeople.com/">HTML for People</a>. 
-			This site is my little home on the internet. It will contain pages for
-			whatever purposes that I need at the time. My plan is to code this entirely
-			by hand. I also am avoiding any cookies or trackers that are ubiquitous
-			in the modern web.
+			<p>
+				Inspired by <a href="https://htmlforpeople.com/">HTML for People</a>. 
+				This site is my little home on the internet. It will contain pages for
+				whatever purposes that I need at the time. My plan is to code this entirely
+				by hand. I also am avoiding any cookies or trackers that are ubiquitous
+				in the modern web.
 			</p>
+
 			<h2>To Do:</h2>
 			<ul>
 				<li><s>Add css stylesheet</s> added <a href="https://simplecss.org/">Simple CSS</a> </li>
@@ -36,6 +37,13 @@
 				<li>Update css to theme appropriately to content</li>
 				<li>Add interactive elements (Javascript)</li>
 			</ul>
+
+			<h2>Update to PHP</h2>
+			<p>
+				At this point, I'm updating the page to use PHP to make the nav 
+				section easier to maintain and to automatically update the date.
+			</p>
+
 			<p>🐘 <a href="https://fosstodon.org/@keydelk">Follow me on Mastodon</a></p>
 			<p class="notice">
 				<strong>Want to learn how to make a website like this?</strong>
@@ -45,9 +53,7 @@
 				friendly, approachable way.
 			</p>
 		</main>
-		<footer>
-			<p>Author: Keith Keydel</p>
-     			<p>Last Updated: <time datetime="2025-01-05">1/5/2025</time></p>
-		</footer>
+
+		<?php include "footer.php"?>
 	</body>
 </html>
