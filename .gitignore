@@ -1,0 +1,7 @@
+# Ignore everything in the images folder
+images/*
+
+# Ignore everything in the blog posts folder except the index and template
+blog/*
+!blog/index.php
+!blog/blog_page_template.php

@@ -21,7 +21,7 @@
             <!-- ADD BLOG ENTRIES HERE! -->
             <ul>
                 <li><a href="/blog/2025-01-09_company_meeting.php">1/9/2025 Company Meeting leaves me drained</a></li>
-                <li><a href="/blog/2025-01-07_quick_update.php">1/7/2025 Quick uppdate before work</a></li>
+                <li><a href="/blog/2025-01-07_quick_update.php">1/7/2025 Quick update before work</a></li>
                 <li><a href="/blog/2025-01-06_coding_on_my_MNT_Reform.html">1/6/2025 Coding on my MNT Reform</a></li>
                 <li><a href="/blog/2025-01-05_html_for_people.html">1/5/2025 Starting with HTML for People</a></li>
             </ul>
