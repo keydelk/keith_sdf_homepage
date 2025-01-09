@@ -1,5 +1,5 @@
         <footer>
-			<p>Author: Keith Keydel</p>
+		<p>Author: Keith Keydel</p>
      		<p>
 				<?php
 				$filename = "index.php";
@@ -8,5 +8,9 @@
 				}
 				?>
 
-			</p>
-		</footer>
+		</p>
+		<p>
+			Hosting for this site is provided by 
+			<a target=new href="http://sdf.org">The SDF Public Access UNIX System</a>
+		</p>
+	</footer>

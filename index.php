@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="UTF-8">
+        <head>
+                <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Keith's Homepage</title>
-                <meta name="keywords" content="bbs, unix, free shell, shell account, free shell account, shell access, free account, netbsd, public access, unix system, dec alpha, arpa, vhost, free webhosting, free webhost, free irc sundays, SDF, Super Dimension Fortress, lisp, genera, eggdrop, bouncer, learn unix, unix training, minecraft, paintchat">
-                <meta name="description" content="Keith's Basic Site">
+                <meta name="keywords" content="unix, netbsd, free webhosting, SDF">
+                <meta name="description" content="Home of Keith's Blog and other stuff">
 		<meta name="author" content="Keith Keydel">
 		<link rel="stylesheet" href="css/simple.css">
 	</head>
@@ -14,10 +14,6 @@
 			<?php include "nav.php" ?>
 
 			<h1>Keith's Homepage</h1>
-			<p>
-				Hosting for this site is provided by 
-				<a target=new href="http://sdf.org">The SDF Public Access UNIX System</a>
-			</p>
 		</header>
 
 		<main>
@@ -28,16 +24,13 @@
 				by hand. I also am avoiding any cookies or trackers that are ubiquitous
 				in the modern web.
 			</p>
-
-			<h2>To Do:</h2>
+			<p>
+			  This site is a work in progress. For now:
+			</p>
 			<ul>
-				<li><s>Add css stylesheet</s> added <a href="https://simplecss.org/">Simple CSS</a> </li>
-				<li><s>Decide on purpose of page(s)</s> Old-school internet home page</li>
-				<li>Add content (and probably more pages)</li>
-				<li>Update css to theme appropriately to content</li>
-				<li>Add interactive elements (Javascript)</li>
+			  <li><a href="/blog/">Check out my Blog</a></li>
 			</ul>
-
+			
 			<h2>Update to PHP</h2>
 			<p>
 				At this point, I'm updating the page to use PHP to make the nav 
