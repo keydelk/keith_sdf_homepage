@@ -5,3 +5,6 @@ images/*
 blog/*
 !blog/index.php
 !blog/blog_page_template.php
+
+# Ignore the About Me page
+about.php

@@ -7,7 +7,12 @@
                 <meta name="keywords" content="unix, netbsd, free webhosting, SDF">
                 <meta name="description" content="Home of Keith's Blog and other stuff">
 		<meta name="author" content="Keith Keydel">
-		<link rel="stylesheet" href="css/simple.css">
+		<link rel="stylesheet" href="/css/simple.css">
+		<link rel="stylesheet" href="/css/customizations.css">
+		<link rel="stylesheet" href="/fa/css/all.min.css">
+		<link rel="icon" href="/favicon/favicon.ico" sizes="32x32">
+		<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+		<link rel="manifest" href="/favicon/site.webmanifest">
 	</head>
 	<body>
 		<header>
@@ -35,6 +40,41 @@
 			<p>
 				At this point, I'm updating the page to use PHP to make the nav 
 				section easier to maintain and to automatically update the date.
+			</p>
+
+			<h2>Multiple CSS Style-Sheets</h2>
+			<p>
+				At this point, I'm reverting the 
+				<a href="https://simplecss.org/">simple.css stylesheet</a> back 
+				to it's original state and instead use a separate 
+				customization.css file to override it. Current overrides include 
+				the blue color scheme, the cursive font on Tilly's graduation 
+				page, and the sticky headers (though, I'm not sure I like the 
+				sticky headers).
+			</p>
+			<p>
+				
+			</p>
+			<p>
+			    I'm not sure if this is better, per se, but this gives me the 
+			    chance to try both methods controlling the appearance of my site. 
+				It also allows me to update the styles for the newer blog entries, 
+				while leaving the styling of the older pages static. This preserves 
+				the appearance of the older pages, making it more clear how my site 
+				is evolving over time.
+			</p>
+			<p>
+				I have also considered using the minified and/or 
+				<abbr title="Content Delivery Network">CDN</abbr> version.
+				However, I felt that was at odds with my desire to have an entirely 
+				self-hosted and human-readable site.
+			</p>
+			<p>
+				This decision does make some things a bit more difficult, such
+				as hosting the <i class="fa-solid fa-font-awesome"></i>
+				<a href="https://docs.fontawesome.com/web/setup/host-yourself/webfonts">
+				Font Awesome icons (Web Fonts)</a> myself. But I think that is worth 
+				it to have the site work the way I want it to work.
 			</p>
 
 			<p>🐘 <a href="https://fosstodon.org/@keydelk">Follow me on Mastodon</a></p>

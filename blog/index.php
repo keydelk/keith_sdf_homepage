@@ -8,6 +8,7 @@
                 <meta name="description" content="Keith's blog featuring my thoughts and lessons learned">
 		<meta name="author" content="Keith Keydel">
 		<link rel="stylesheet" href="../css/simple.css">
+        <link rel="stylesheet" href="../css/customizations.css">
 	</head>
     <body>
         <header>

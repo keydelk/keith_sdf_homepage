@@ -5,6 +5,7 @@
         <title>About Keith</title>
         <meta name="author" content="Keith Keydel">
         <link rel="stylesheet" href="/css/simple.css">
+        <link rel="stylesheet" href="/css/customizations.css">
     </head>
     <body>
         <header>
