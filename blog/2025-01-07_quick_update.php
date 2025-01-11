@@ -14,7 +14,7 @@
       <!-- Include Title in H1-->
       <h1>A quick update before work</h1>
     </header>
-    <main>
+    <main id="main">
       <!-- MAIN CONTENT HERE -->
        <h2>Trying to make a new habit</h2>
        <p>

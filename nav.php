@@ -15,6 +15,7 @@ function aria_current( $url ) {
 }
 ?>
 
+<a href="#main" class="skip">Skip to main content</a>
 <nav>
     <a href="/" <?php aria_current('/') ?>>Home</a>
     <a href="/blog" <?php aria_current('/blog') ?>>Blog</a>

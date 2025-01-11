@@ -13,7 +13,7 @@
 
             <h1>About Keith</h1>
         </header>
-        <main>
+        <main id="main">
             <figure>
                 <img src="images/keith.jpg" alt="Keith in costume at the Colorado Renaissance festival." class="center">
                 <figcaption>Keith enjoying the Colorado Renaissance Festival</figcaption>

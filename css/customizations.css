@@ -69,3 +69,21 @@ header {
   top: 0;
   z-index: 100;
 }
+
+/* Skip to Main Content link */
+.skip {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    opacity: 1;
+}

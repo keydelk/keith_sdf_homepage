@@ -4,7 +4,7 @@
                 <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Keith's Homepage</title>
-                <meta name="keywords" content="unix, netbsd, free webhosting, SDF">
+                <meta name="keywords" content="blog, web dev, unix, netbsd, SDF">
                 <meta name="description" content="Home of Keith's Blog and other stuff">
 		<meta name="author" content="Keith Keydel">
 		<link rel="stylesheet" href="/css/simple.css">
@@ -21,13 +21,14 @@
 			<h1>Keith's Homepage</h1>
 		</header>
 
-		<main>
+		<main id="main">
 			<p>
 				Inspired by <a href="https://htmlforpeople.com/">HTML for People</a>. 
 				This site is my little home on the internet. It will contain pages for
 				whatever purposes that I need at the time. My plan is to code this entirely
-				by hand. I also am avoiding any cookies or trackers that are ubiquitous
-				in the modern web.
+				by hand. Also, I am avoiding any cookies or trackers that are ubiquitous
+				in the modern web. The visit counter is implemented in PHP and does not
+				save any information about the visitor.
 			</p>
 			<p>
 			  This site is a work in progress. For now:
@@ -71,7 +72,7 @@
 			</p>
 			<p>
 				This decision does make some things a bit more difficult, such
-				as hosting the <i class="fa-solid fa-font-awesome"></i>
+				as hosting the <i class="fa-solid fa-font-awesome" aria-hidden="true"></i>
 				<a href="https://docs.fontawesome.com/web/setup/host-yourself/webfonts">
 				Font Awesome icons (Web Fonts)</a> myself. But I think that is worth 
 				it to have the site work the way I want it to work.

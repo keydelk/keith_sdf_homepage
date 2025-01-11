@@ -15,7 +15,7 @@
       <!-- Include Title in H1-->
       <h1>Company Meetings Quickly Drain My Social Battery</h1>
     </header>
-    <main>
+    <main id="main">
       <!-- MAIN CONTENT HERE -->
        <h2>My Introversion Gets More Pronounced as I get Older</h2>
        <p>
