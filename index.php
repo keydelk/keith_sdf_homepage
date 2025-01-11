@@ -78,6 +78,27 @@
 				it to have the site work the way I want it to work.
 			</p>
 
+			<h2>
+			  <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
+			  Accessibility
+			</h2>
+
+			<p>
+			  Accessibility is important to me, and I am striving to make this site
+			  compliant with the <a href="https://www.w3c.org/TR/WCAG22/">WCAG 2.2</a>
+			  guidelines at the AA level or above. So far I have run a couple of automated
+			  accessibility checkers on my site as well as manually tested using the
+			  NVDA screen reader and keyboard-only navigation. The site currently does not
+			  have any audio or video content, but if I add them I will be sure to include
+			  transcripts and captioning.
+			</p>
+
+			<p>
+			  If you have trouble accessing any part of the site, please let me know at
+			  <a href="mailto:keydelk@sdf.org">keydelk@sdf.org</a> and I will attempt to
+			  fix the issue in the next update.
+			</p>
+
 			<p>🐘 <a href="https://fosstodon.org/@keydelk">Follow me on Mastodon</a></p>
 			<p class="notice">
 				<strong>Want to learn how to make a website like this?</strong>
