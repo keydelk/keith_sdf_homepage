@@ -27,6 +27,7 @@
         <p>Entries (Most Recent at Top)</p>
         <!-- ADD BLOG ENTRIES HERE! -->
         <ul>
+            <li><a href="/blog/2025-01-11-yearning-for-lost-optimism.php">1/11/2025 Yearning for Lost Optimism</a></li>
             <li><a href="/blog/2025-01-10_icons_and_click_counters.php">1/10/2025 Icons and a Visits Counter</a></li>
             <li><a href="/blog/2025-01-09_company_meeting.php">1/9/2025 Company Meeting leaves me drained</a></li>
             <li><a href="/blog/2025-01-07_quick_update.php">1/7/2025 Quick update before work</a></li>

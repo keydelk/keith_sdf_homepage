@@ -1,6 +1,6 @@
         <footer>
 		<p>Author: Keith Keydel</p>
-     		<p>
+     	<p>
 				<?php
 				$filename = "./index.php";
 				if (file_exists($filename)) {
@@ -16,7 +16,7 @@
 		<p>
 			This site has been visited
 			<?php
-			        $cnt = file_get_contents('./hits') + 1;
+			    $cnt = file_get_contents('./hits') + 1;
 				file_put_contents('./hits', $cnt);
 				echo $cnt;
 			?>

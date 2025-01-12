@@ -23,12 +23,14 @@
   </header>
   <main id="main">
     <!-- MAIN CONTENT HERE -->
+
+    <br>
     <a href="index.php" class="button">&larr; Back to the blog</a>
   </main>
   <footer>
     <p>Author: Keith Keydel</p>
     <!-- DON'T FORGET TO UPDATE THE DATE (both datetime attribute and display value) -->
-    <p>Last Updated: <time datetime="2025-01-06">1/6/2025</time></p>
+    <p>Last Updated: <time datetime="2025-01-06">Month Day, Year</time></p>
     <p>
       Hosting for this site is provided by
       <a target=new href="http://sdf.org">The SDF Public Access UNIX System</a>

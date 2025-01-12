@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-US">
-        <head>
-                <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Keith's Homepage</title>
-                <meta name="keywords" content="blog, web dev, unix, netbsd, SDF">
-                <meta name="description" content="Home of Keith's Blog and other stuff">
+        <title>Keith's Homepage</title>
+        <meta name="keywords" content="blog, web dev, unix, netbsd, SDF">
+        <meta name="description" content="Home of Keith's Blog and other stuff">
 		<meta name="author" content="Keith Keydel">
 		<link rel="stylesheet" href="/css/simple.css">
 		<link rel="stylesheet" href="/css/customizations.css">
