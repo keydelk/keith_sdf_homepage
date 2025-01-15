@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keith's Blog</title>
+    <title>Keith's SDF Blog</title>
     <meta name="keywords" content="blog">
     <meta name="description" content="Keith's blog featuring my thoughts and lessons learned">
     <meta name="author" content="Keith Keydel">
     <link rel="stylesheet" href="../css/simple.css">
     <link rel="stylesheet" href="../css/customizations.css">
     <link rel="stylesheet" href="/fa/css/all.min.css">
-    <link rel="icon" href="/favicon/favicon.ico" sizes="32x32">
-    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Keith's SDF">
     <link rel="manifest" href="/favicon/site.webmanifest">
 </head>
 
@@ -27,6 +30,9 @@
         <p>Entries (Most Recent at Top)</p>
         <!-- ADD BLOG ENTRIES HERE! -->
         <ul>
+            <li><a href="/blog/2025-01-15-minor-website-improvements.php">1/15/2025 Minor Website Improvements</a></li>
+            <li><a href="/blog/2025-01-13-inline-javascript.php">1/13/2025 Inline Javascript</a></li>
+            <li><a href="/blog/2025-01-11-yearning-for-lost-optimism.php">1/11/2025 Yearning for Lost Optimism</a></li>
             <li><a href="/blog/2025-01-10_icons_and_click_counters.php">1/10/2025 Icons and a Visits Counter</a></li>
             <li><a href="/blog/2025-01-09_company_meeting.php">1/9/2025 Company Meeting leaves me drained</a></li>
             <li><a href="/blog/2025-01-07_quick_update.php">1/7/2025 Quick update before work</a></li>

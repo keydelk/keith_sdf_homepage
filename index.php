@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
-        <head>
-                <meta charset="UTF-8">
+    <head>
+        <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Keith's Homepage</title>
-                <meta name="keywords" content="blog, web dev, unix, netbsd, SDF">
-                <meta name="description" content="Home of Keith's Blog and other stuff">
+        <title>Keith's Homepage</title>
+        <meta name="keywords" content="blog, web dev, unix, netbsd, SDF">
+        <meta name="description" content="Home of Keith's Blog and other stuff">
 		<meta name="author" content="Keith Keydel">
 		<link rel="stylesheet" href="/css/simple.css">
 		<link rel="stylesheet" href="/css/customizations.css">
 		<link rel="stylesheet" href="/fa/css/all.min.css">
-		<link rel="icon" href="/favicon/favicon.ico" sizes="32x32">
-		<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
-		<link rel="manifest" href="/favicon/site.webmanifest">
+		<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="Keith's SDF">
+        <link rel="manifest" href="/favicon/site.webmanifest">
 	</head>
 	<body>
 		<header>
@@ -35,6 +38,7 @@
 			</p>
 			<ul>
 			  <li><a href="/blog/">Check out my Blog</a></li>
+			  <li>Slowely adding some <a href="/recipes/">recipes</a>.</li>
 			</ul>
 			
 			<h2>Update to PHP</h2>
