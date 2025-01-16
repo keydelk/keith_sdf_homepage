@@ -89,7 +89,15 @@ header {
     opacity: 1;
 }
 
+
 /* Reduce Padding in Footer */
 footer p {
     margin: 0.5rem;
+
+/* Nav Menu styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
 }
