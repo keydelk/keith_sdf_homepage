@@ -96,7 +96,7 @@
 	  <a href="mailto:keydelk@sdf.org">keydelk@sdf.org</a>, and I will attempt to
 	  fix the issue in the next update.
 	</p>
-	<p>🐘 <a href="https://fosstodon.org/@keydelk">Follow me on Mastodon</a></p>
+	<p>🐘 Follow me on <a rel="me" href="https://fosstodon.org/@keydelk">Mastodon</a>
 	<p class="notice">
 	  <strong>Want to learn how to make a website like this?</strong>
 	  <br> Check out the free web book
