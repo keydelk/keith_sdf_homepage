@@ -30,7 +30,9 @@
         <p>Recipes</p>
         <!-- Add recipies here -->
         <ul>
-            <li><a href="/recipes/keydel-stollen.php">Keydel Stollen</a></li>
+            <li><a href="/recipes/red-chili.php">Chili</a></li>
+            <li><a href="/recipes/keydel-stollen.php">Stollen</a></li>
+	    <li><a href="/recipes/swiss-potato-soup.php">Swiss Potato Sausage Soup</a></li>
         </ul>
     </main>
 

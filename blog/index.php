@@ -30,6 +30,15 @@
         <p>Entries (Most Recent at Top)</p>
         <!-- ADD BLOG ENTRIES HERE! -->
         <ul>
+	  <li>
+	    <a href="/blog/2025-01-25-MBA-final-course.php">1/25/2025 Final Course for my MBA</a>
+	  </li>
+	  <li>
+	    <a href="/blog/2025-01-20-resources-for-website-builders.php">
+	      1/20/2025 Resources for Website Builders
+	    </a>
+	  </li>
+	    <li><a href="/blog/2025-01-17-writing-when-not-inspired.php">1/17/2025 Writing when not Inspired</a></li>
             <li><a href="/blog/2025-01-15-minor-website-improvements.php">1/15/2025 Minor Website Improvements</a></li>
             <li><a href="/blog/2025-01-13-inline-javascript.php">1/13/2025 Inline Javascript</a></li>
             <li><a href="/blog/2025-01-11-yearning-for-lost-optimism.php">1/11/2025 Yearning for Lost Optimism</a></li>

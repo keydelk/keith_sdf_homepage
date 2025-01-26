@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Add Title -->
+  <title>Old Fashioned Swiss Potato Sausage Soup</title>
+  <meta name="author" content="Keith Keydel">
+  <link rel="stylesheet" href="../css/simple.css">
+  <link rel="stylesheet" href="../css/customizations.css">
+  <link rel="stylesheet" href="/fa/css/all.min.css">
+  <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+  <link rel="shortcut icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="Keith's SDF">
+  <link rel="manifest" href="/favicon/site.webmanifest">
+</head>
+
+<body>
+  <header>
+    <?php include "../nav.php" ?>
+
+    <!-- Include Title in H1-->
+    <h1>Old Fashioned Swiss Potato Sausage Soup</h1>
+  </header>
+  <main id="main">
+    <!-- MAIN CONTENT HERE -->
+     <figure>
+      <img src="/images/Old-fashioned-swiss-potato-sausage-soup.png" 
+      alt="Scan of the recipe with note from my grandmother, Roberta Keydel. Reads:
+      Valentine's Day Recipe From Roberta Keydel.
+      Old Fashioned Swiss Potato Sausage Soup.
+      This delicious soup from my childhood came from my father's family in 
+      Highland, Illinois, a region also called New Switzerland. It's simple farm
+      fare from the Old World. I found this recipe in a collection from my Aunt
+      Jennie Latzer Kaesar's recipes that the family printed for her in 1978 in
+      honor of her 100th birthday.
+      Aunt Jennie lived in Highland her entire life and was the keeper of the
+      local history. In 1970, when she was 92, she completed and published
+      'The Settling of Highland,' a translation of the letters of the founders 
+      of New Switzerland. An abridged version of one such letter is on the back.
+      Handwritten:
+      This was my valentine to the Valentine's Day party at Newbury Court.
+      Thought you would be interested in the quote from Aunt Jane Kaesar.
+      Have a Happy Valentine's Day">
+      <figcaption>
+        My grandmother, Roberta Keydel, sent us this letter for Valentines day 
+        in 2013 or 2014.
+      </figcaption>
+     </figure>
+
+     <br>
+     <h2>Description</h2>
+     <p>
+      This soup recipe came from my paternal grandmother's family who were 
+      Swiss immigrants living in Highland, Illinois.
+     </p>
+
+     <br>
+     <h3 id="ingredients">Ingredients</h3>
+     <ul>
+      <li>6 medium potatoes</li>
+      <li>1 small onion</li>
+      <li>
+        1 ring (~14 oz) <a href="https://en.wikipedia.org/wiki/Mettwurst">Mettwurst</a>
+        or substitute bratwurst or keilbasa
+      </li>
+      <li>1 cup flour</li>
+      <li>8 tbsp shortening or butter</li>
+      <li>bay leaf</li>
+      <li>2 cloves</li>
+      <li>salt</li>
+      <li>pepper</li>
+     </ul>
+
+     <br>
+     <h3 id="directions">Directions</h3>
+     <ol>
+      <li>
+        Peel and dice 6 medium potatoes and 1 small onion. Boil with 1/2 bay leaf,
+        2 cloves, salt and pepper in 1 quart of water until tender.
+      </li>
+      <li>
+        Brown 1 cup flour in shortening (or butter) to a dark golden brown. Add 
+        1 quart of water and bring to a boil.
+      </li>
+      <li>
+        Mix 1 and 2 together. Add a ring of Mettwurst (a smoked beef sausage - 
+        you can substitute bratwurst or keilbasa) and simmer 1/2 hour. Cut up 
+        the sausage and add it to the soup.
+      </li>
+     </ol>
+
+    <br>
+    <a href="index.php" class="button">&larr; Back to all recipes</a>
+  </main>
+  <footer>
+    <p>Author: Keith Keydel</p>
+    <!-- DON'T FORGET TO UPDATE THE DATE (both datetime attribute and display value) -->
+    <p>Last Updated: <time datetime="2025-01-17">January 17, 2025</time></p>
+    <p>
+      Hosting for this site is provided by
+      <a target=new href="http://sdf.org">The SDF Public Access UNIX System</a>
+    </p>
+  </footer>
+</body>
+
+</html>
