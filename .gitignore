@@ -8,3 +8,6 @@ blog/*
 
 # Ignore the About Me page
 about.php
+
+# Ignore the hits page
+hits
