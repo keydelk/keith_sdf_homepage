@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Add Title -->
   <title>Old Fashioned Swiss Potato Sausage Soup</title>
   <meta name="author" content="Keith Keydel">
+  <meta name="description" content="Old-fashioned Swiss Potato Sausage Soup
+recipe from Jennie Latzer Kaesar.">
   <link rel="stylesheet" href="../css/simple.css">
   <link rel="stylesheet" href="../css/customizations.css">
   <link rel="stylesheet" href="/fa/css/all.min.css">

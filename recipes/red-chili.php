@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Add Title -->
   <title>Red Chili</title>
   <meta name="author" content="Keith Keydel">
+  <meta name="description" content="Keith's Red Chili Recipe">
   <link rel="stylesheet" href="../css/simple.css">
   <link rel="stylesheet" href="../css/customizations.css">
   <link rel="stylesheet" href="/fa/css/all.min.css">
