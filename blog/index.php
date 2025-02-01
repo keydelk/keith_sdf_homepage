@@ -31,6 +31,9 @@
         <!-- ADD BLOG ENTRIES HERE! -->
         <ul>
 	  <li>
+	    <a href="/blog/2025-01-31-standing-up.php">1/31/2025 Standing Up For Others</a>
+	  </li>
+	  <li>
 	    <a href="/blog/2025-01-25-MBA-final-course.php">1/25/2025 Final Course for my MBA</a>
 	  </li>
 	  <li>
