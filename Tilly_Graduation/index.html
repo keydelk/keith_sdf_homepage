@@ -17,26 +17,57 @@
     </header>
     <main>
       <img src="../images/tilly_portrait.jpg" alt="Photograph of Tilly at the start of her senior year at Columbine High School" class="center">
-      <p>
-	Tilly is a senior at Columbine Highschool with a 3.7 GPA. They are intested in
-	jewelry making, pottery, and character design. They practice Aerial Arts, focusing
-	on the lyra (aerial hoop). They are involved in Technical Theatre and National Honor
-	Society.
-      </p>
-      <p>
-	Tilly will attend the University of Northern Colorado this Fall, planning on majoring
-	in art.
-      </p>
-      <p class="center">
-	The graduation ceremony will be on
-	<br>
-	<time datetime="2025-05-15 19:00">May 15, 2025 7:00 pm</time>
-      </p>
-      <p class="center">
-	At the
-	<br>
-	Red Rocks Amphitheater
-      </p>
+      <section id="about_Tilly" aria-label="About Tilly">
+        <p>
+	  Tilly is a senior at Columbine Highschool with a 3.7 GPA. They are intested in
+	  jewelry making, pottery, and character design. They practice Aerial Arts, focusing
+	  on the lyra (aerial hoop). They are involved in Technical Theatre and National Honor
+	  Society.
+        </p>
+        <p>
+	  Tilly will attend the University of Northern Colorado this Fall, planning on majoring
+	  in art.
+        </p>
+      </section>
+      <section id="ceremony" aria-label="Graduation Ceremony">
+        <p class="center">
+	  The graduation ceremony will be on
+	  <br>
+	  <time datetime="2025-05-15 19:00">Thursday, May 15, 2025 7:00 pm</time>
+        </p>
+        <p class="center">
+	  At the
+	  <br>
+	  Red Rocks Amphitheater
+        </p>
+      </section>
+      <section id="graduation_party" aria-label="Graduation Party">
+        <h2>Graduation Party</h2>
+        <p>
+	  A graduation party for Tilly will be held at our house on
+	  <time datetime="2025-05-16 16:00">Friday, May 16, 2025 at 5:00 pm.</time>
+        </p>
+        <p>
+	  We will be catering Olive Garden. Please RSVP below so we can order enough food.
+	  And please let us know if you have any dietary restrictions. Optionally, include
+	  your email so we can follow up with you and send updates.
+        </p>
+      </section>
+      <form action="rsvp.php" method="POST">
+	<label for="name">*Name: </label>
+	<input type="text" id="name" name="name" autocomplete="name"
+	       aria-required="true" required><br>
+	<label for="attending">*Number attending: </label>
+	<input type="number" id="attending" name="attending"
+	       aria-required="true" required><br>
+	<label for="dietary">Any dietary restrictions? </label>
+	<input type="text" id="dietary" name="dietary"><br>
+	<label for="email">Email Address: </label>
+	<input type="email" id="email" name="email" autocomplete="true"><br>
+	<input type="submit" value="RSVP">
+      </form>
+      
     </main>
   </body>
 </html>
+ 

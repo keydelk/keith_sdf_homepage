@@ -64,6 +64,15 @@
   font-family: var(--fantasy-font);
 }
 
+/* Show sample output as a block element with visible border */
+samp {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border: 1px solid var(--border);
+    padding: 1em;
+}
+
 /* Making the header sticky */
 header {
   position: sticky;

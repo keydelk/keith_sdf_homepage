@@ -25,6 +25,9 @@ function aria_current( $url ) {
     <li class="nav-item">
       <a href="/recipes" role="menuitem" class="nav-link" <?php aria_current('/recipes') ?>>Recipes</a>
     </li>
+    <li>
+      <a href="/games" role="menuitem" class="nav-link" <?php aria_current('/games') ?>>Games</a>
+    </li>
     <li class="nav-item">
       <a href="/blog" role="menuitem" class="nav-link" <?php aria_current('/blog') ?>>Blog</a>
     </li>

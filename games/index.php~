@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keith's Games</title>
+    <meta name="keywords" content="games, Javascript">
+    <meta name="description" content="A small collection of Javascript games">
+    <meta name="author" content="Keith Keydel">
+    <link rel="stylesheet" href="../css/simple.css">
+    <link rel="stylesheet" href="../css/customizations.css">
+    <link rel="stylesheet" href="/fa/css/all.min.css">
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Keith's SDF games">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <?php include "../nav.php" ?>
+
+        <h1>Games <i class="fa-solid fa-gamepad"></i></h1>
+    </header>
+    <main id="main">
+        <p>Javascript Games</p>
+        <!-- ADD GAMES HERE! -->
+        <ul>
+	  <li>
+	    <a href="invaders.php">Invaders</a>
+	  </li>
+        </ul>
+    </main>
+
+    <?php include "../footer.php" ?>
+
+</body>
+
+</html>
