@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipies</title>
+    <title>Recipes</title>
     <meta name="keywords" content="recipe">
     <meta name="description" content="Keith's recipies">
     <meta name="author" content="Keith Keydel">

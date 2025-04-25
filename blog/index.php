@@ -31,7 +31,7 @@
         <!-- ADD BLOG ENTRIES HERE! -->
         <ul>
 	  <li>
-	    <a href="2025-04-23-our-elderly-cats.php">4/23/20255 Our Elderly Cats</a>
+	    <a href="2025-04-23-our-elderly-cats.php">4/23/2025 Our Elderly Cats</a>
 	  </li>
 	  <li>
 	    <a href="2025-04-18-back-from-a-long-hiatus.php">4/18/2025 Back From a Long Hiatus</a>

@@ -38,7 +38,8 @@
 	</p>
 	<ul>
 	  <li><a href="/blog/">Check out my Blog</a></li>
-	  <li>Slowly adding some <a href="/recipes/">recipes</a>.</li>
+	  <li>Slowly adding some <a href="/recipes/">recipes</a></li>
+          <li>Play <a href="/games/">browser games</a></li>
 	</ul>
 
 	<h2>Update to PHP</h2>
