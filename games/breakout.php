@@ -65,6 +65,43 @@
      let rightPressed = false;
      let leftPressed = false;
 
+     const brickRowCount = 3;
+     const brickColumnCount = 5;
+     const brickWidth = 75;
+     const brickHeight = 20;
+     const brickPadding = 10;
+     const brickOffestTop = 30;
+     const brickOffestLeft = 30;
+
+     const bricks = [];
+     for (let c = 0; c < brickColumnCount; c++) {
+       bricks[c] = [];
+       for (let r = 0; r < brickRowCount; r++) {
+	 bricks[c][r] = { x: 0, y: 0, status: 1 };
+       }
+     }
+
+     function collisionDetection() {
+       if (x > paddleX && x < paddleX + paddleWidth &&
+	   y > paddleY && y < paddleY + paddleHeight) {
+	 dy = -dy;
+	 return;
+       }
+       for (let c = 0; c < brickColumnCount; c++) {
+	 for(let r = 0; r < brickRowCount; r++) {
+	   const b = bricks[c][r];
+	   if (b.status > 0) {
+	     if (x > b.x && x < b.x + brickWidth &&
+		 y > b.y && y < b.y + brickHeight) {
+	       dy = -dy;
+	       b.status -= 1;
+	       return;
+	   }
+	   }
+	 }
+       }
+     }
+     
      function drawBall() {
        ctx.beginPath();
        ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
@@ -81,6 +118,24 @@
        ctx.closePath();
      }
 
+     function drawBricks() {
+       for (let c = 0; c < brickColumnCount; c++) {
+	 for (let r = 0; r < brickRowCount; r++) {
+	   if (bricks[c][r].status > 0) {
+	     const brickX = c * (brickWidth + brickPadding) + brickOffestLeft;
+	     const brickY = r * (brickHeight + brickPadding) + brickOffestTop;
+	     bricks[c][r].x = brickX;
+	     bricks[c][r].y = brickY;
+	     ctx.beginPath();
+	     ctx.rect(brickX, brickY, brickWidth, brickHeight);
+	     ctx.fillStyle = "brown";
+	     ctx.fill();
+	     ctx.closePath();
+	   }
+	 }
+       }
+     }
+
      function draw() {
        ctx.clearRect(0, 0, canvas.width, canvas.height);
        
@@ -92,6 +147,8 @@
        }
 
        drawPaddle();
+       collisionDetection();
+       drawBricks();
        
        if (y + dy < ballRadius) {
 	 dy = -dy;
@@ -101,7 +158,7 @@
        }
        x += dx;
        y += dy;
-       
+
        drawBall();
 
        if (y > canvas.height) {
