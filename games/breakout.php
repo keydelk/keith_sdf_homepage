@@ -35,6 +35,17 @@
 	<a href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript">2D breakout game using pure JavaScript</a>
 	by Mozilla.
       </p>
+      <p>
+	Currently, this game is a pretty plain copy of the one in the tutorial.
+	Next, I'm planning on next making a copy of the game, but jazzing it up a bit;
+	improving collison detection, making the bricks take multiple hits to break
+	(changing colors), possibly adding multiple balls.
+      </p>
+      <p>
+	Move the paddle with the left and right arrow keys.
+	Currently the game is not playable on mobile.
+	The next version will have mobile support.
+      </p>
       <section id="gameArea">
 	<canvas id="myCanvas" width="480" height="320"></canvas>
 	<br>
@@ -49,6 +60,7 @@
      const canvas = document.getElementById("myCanvas");
      const ctx = canvas.getContext("2d");
      let interval = 0;
+     let score = 0;
 
      const ballRadius = 10;
      let x = canvas.width / 2;
@@ -95,8 +107,9 @@
 		 y > b.y && y < b.y + brickHeight) {
 	       dy = -dy;
 	       b.status -= 1;
+	       score += 50;
 	       return;
-	   }
+	     }
 	   }
 	 }
        }
@@ -136,6 +149,12 @@
        }
      }
 
+     function drawScore() {
+       ctx.font = "16px Arial";
+       ctx.fillStyle = "navy";
+       ctx.fillText(`Score: ${score}`, 8, 20);
+     }
+
      function draw() {
        ctx.clearRect(0, 0, canvas.width, canvas.height);
        
@@ -160,6 +179,13 @@
        y += dy;
 
        drawBall();
+       drawScore();
+
+       if (score === 50 * brickRowCount * brickColumnCount) {
+	 alert("You Win, Congratulations!");
+	 document.location.reload();
+	 clearInterval(interval); // Needed for Chrome to end game
+       }
 
        if (y > canvas.height) {
 	 alert("Game Over!");
@@ -185,10 +211,18 @@
 	 leftPressed = false;
        }
      }
+
+     function mouseMoveHandler(e) {
+       const relativeX = e.clientX - canvas.offsetLeft;
+       if (relativeX > 0 && relativeX < canvas.width) {
+	 paddleX = relativeX - paddleWidth / 2;
+       }
+     }
      
      function startGame() {
        document.addEventListener("keydown", keyDownHandler, false);
        document.addEventListener("keyup", keyUpHandler, false);
+       document.addEventListener("mousemove", mouseMoveHandler, false);
        interval = setInterval(draw, 10);
      }
 
