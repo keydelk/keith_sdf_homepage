@@ -48,12 +48,22 @@
      // Game code
      const canvas = document.getElementById("myCanvas");
      const ctx = canvas.getContext("2d");
+     let interval = 0;
 
      const ballRadius = 10;
      let x = canvas.width / 2;
      let y = canvas.height - 30;
      let dx = 2;
      let dy = -2;
+
+     const paddleHeight = 10;
+     const paddleWidth = 75;
+     let paddleX = (canvas.width - paddleWidth) / 2;
+     let paddleY = (canvas.height - paddleHeight - 5);
+     let paddleSpeed = 7;
+
+     let rightPressed = false;
+     let leftPressed = false;
 
      function drawBall() {
        ctx.beginPath();
@@ -63,28 +73,75 @@
        ctx.closePath();
      }
 
+     function drawPaddle() {
+       ctx.beginPath();
+       ctx.rect(paddleX, paddleY, paddleWidth, paddleHeight);
+       ctx.fillStyle = "dodgerblue";
+       ctx.fill();
+       ctx.closePath();
+     }
+
      function draw() {
        ctx.clearRect(0, 0, canvas.width, canvas.height);
-       drawBall();
-       if (y + dy < 0 || y + dy > canvas.height) {
+       
+       if (rightPressed) {
+	 paddleX = Math.min(paddleX + paddleSpeed, canvas.width - paddleWidth);
+       }
+       if (leftPressed) {
+	 paddleX = Math.max(paddleX - paddleSpeed, 0);
+       }
+
+       drawPaddle();
+       
+       if (y + dy < ballRadius) {
 	 dy = -dy;
        }
-       if (x + dx < 0 || x + dx > canvas.width) {
+       if (x + dx < ballRadius || x + dx > canvas.width - ballRadius) {
 	 dx = -dx;
        }
        x += dx;
        y += dy;
+       
+       drawBall();
+
+       if (y > canvas.height) {
+	 alert("Game Over!");
+	 document.location.reload();
+	 clearInterval(interval);
+       }
+     }
+
+     function keyDownHandler(e) {
+       if (e.key === "Right" || e.key === "ArrowRight") {
+	 rightPressed = true;
+       }
+       if (e.key === "Left" || e.key === "ArrowLeft") {
+	 leftPressed = true;
+       }
+     }
+
+     function keyUpHandler(e) {
+       if (e.key === "Right" || e.key === "ArrowRight") {
+	 rightPressed = false;
+       }
+       if (e.key === "Left" || e.key === "ArrowLeft") {
+	 leftPressed = false;
+       }
      }
      
      function startGame() {
-       setInterval(draw, 10);
+       document.addEventListener("keydown", keyDownHandler, false);
+       document.addEventListener("keyup", keyUpHandler, false);
+       interval = setInterval(draw, 10);
      }
 
-     document.getElementById("startGame")
-	     .addEventListener("click", function () {
-	       startGame();
-	       this.disabled = true;
-	     });
+     startButton = document.getElementById("startGame");
+
+     startButton.addEventListener("click", function () {
+       startGame();
+       this.disabled = true;
+     });
+     
     </script>
   </body>
 </html>
