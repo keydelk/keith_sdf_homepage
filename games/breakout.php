@@ -17,6 +17,9 @@
     <meta name="apple-mobile-web-app-title" content="Keith's SDF games">
     <link rel="manifest" href="/favicon/site.webmanifest">
     <style>
+     header {
+       position: static;
+     }
      canvas {
        background: #ccc;
        display: block;
@@ -36,13 +39,18 @@
 	by Mozilla.
       </p>
       <p>
-	Currently, this game is a pretty plain copy of the one in the tutorial.
-	Next, I'm planning on next making a copy of the game, but jazzing it up a bit;
+	Currently, this game is a pretty plain copy of the one in the tutorial. I made a
+	few minor changes from the tutorial (random starting x velocity, paddle not at
+	the very bottom of the screen), but pretty close.
+	Next, I'm planning on next making a more heavily modified copy of the game,
+	jazzing it up a bit;
 	improving collison detection, making the bricks take multiple hits to break
 	(changing colors), possibly adding multiple balls.
       </p>
       <p>
 	Move the paddle with the left and right arrow keys.
+	Or use the mouse, the paddle tracks the cursor if it is within the
+	canvas area.
 	Currently the game is not playable on mobile.
 	The next version will have mobile support.
       </p>
@@ -61,11 +69,12 @@
      const ctx = canvas.getContext("2d");
      let interval = 0;
      let score = 0;
+     let lives = 3;
 
      const ballRadius = 10;
      let x = canvas.width / 2;
      let y = canvas.height - 30;
-     let dx = 2;
+     let dx = randSign() * randInt(1, 3);
      let dy = -2;
 
      const paddleHeight = 10;
@@ -90,6 +99,18 @@
        bricks[c] = [];
        for (let r = 0; r < brickRowCount; r++) {
 	 bricks[c][r] = { x: 0, y: 0, status: 1 };
+       }
+     }
+
+     function randInt(min, max) {
+       return Math.floor(Math.random() * (max - min + 1) + min);
+     }
+
+     function randSign() {
+       if (Math.random() < 0.5) {
+	 return 1;
+       } else {
+	 return -1;
        }
      }
 
@@ -155,6 +176,12 @@
        ctx.fillText(`Score: ${score}`, 8, 20);
      }
 
+     function drawLives () {
+       ctx.font = "16px Arial";
+       ctx.fillStyle = "navy";
+       ctx.fillText(`Lives: ${lives}`, canvas.width - 65, 20);
+     }
+
      function draw() {
        ctx.clearRect(0, 0, canvas.width, canvas.height);
        
@@ -180,18 +207,26 @@
 
        drawBall();
        drawScore();
+       drawLives();
 
        if (score === 50 * brickRowCount * brickColumnCount) {
 	 alert("You Win, Congratulations!");
 	 document.location.reload();
-	 clearInterval(interval); // Needed for Chrome to end game
        }
 
        if (y > canvas.height) {
-	 alert("Game Over!");
-	 document.location.reload();
-	 clearInterval(interval);
+	 lives--;
+	 if (!lives) {
+	   alert("Game Over!");
+	   document.location.reload();
+	 } else {
+	   x = canvas.width / 2
+	   y = canvas.height - 30;
+	   dx = randSign() * randInt(1, 3);
+	   dy = -2;
+	 }
        }
+       requestAnimationFrame(draw);
      }
 
      function keyDownHandler(e) {
@@ -223,7 +258,7 @@
        document.addEventListener("keydown", keyDownHandler, false);
        document.addEventListener("keyup", keyUpHandler, false);
        document.addEventListener("mousemove", mouseMoveHandler, false);
-       interval = setInterval(draw, 10);
+       draw();
      }
 
      startButton = document.getElementById("startGame");
