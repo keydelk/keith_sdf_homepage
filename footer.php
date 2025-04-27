@@ -1,8 +1,11 @@
-        <footer>
+    <footer>
 		<p>Author: Keith Keydel</p>
      	<p>
 				<?php
-				$filename = "./index.php";
+				$filename = '.' . $_SERVER['PHP_SELF'];
+// For some reason, I can't get this to work with files in subdirectories.
+//$filename = preg_replace("\S*\/", '\.\/', $filename);
+//echo "File: " . $filename . '<br>';
 				if (file_exists($filename)) {
 					echo "Last Updated: " . date("F d Y", filemtime($filename));
 				}
