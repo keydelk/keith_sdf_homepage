@@ -34,8 +34,5 @@ function aria_current( $url ) {
     <li class="nav-item">
       <a href="/about.php" role="menuitem" class="nav-link" <?php aria_current('/about.php') ?>>About</a>
     </li>
-    <li class="nav-item">
-      <a href="/Tilly_Graduation/index.html" role="menuitem" class="nav-link">Tilly's Graduation</a>
-    </li>
   </ul>
 </nav>

@@ -1,0 +1,15 @@
+/* TEAM */
+Author: Keith Keydel
+contact: keydelk@sdf.org
+Mastodon: @keydelk@fosstodon.org
+Location: Littleton, CO, United States
+
+/* THANKS */
+My family for putting up with me tinkering
+on silly websites like this one.
+
+/* SITE */
+Last Update: 2025/04/30
+Language: English
+Doctype: HTML5, CSS, Javascript, PHP
+Editors: Emacs, VS Codium

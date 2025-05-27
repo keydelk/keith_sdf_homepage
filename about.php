@@ -28,9 +28,9 @@
       <p>
 	I'm a father of two cool kids, husband to a most incredible
 	woman and human servant to three cats and a dog. I work as
-	a Business Analyst in Denver. On my spare time I like tinkering
+	a Business Analyst in the Denver area. On my spare time I like tinkering
 	with electronics and computers, playing D&amp;D, reading and
-	philosophy
+	philosophy.
       </p>
     </main>
 

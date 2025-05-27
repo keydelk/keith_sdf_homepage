@@ -16,6 +16,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <meta name="apple-mobile-web-app-title" content="Keith's SDF">
     <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="author" href="/humans.txt">
   </head>
   <body>
     <header>
@@ -42,43 +43,6 @@
           <li>Play <a href="/games/">browser games</a></li>
 	</ul>
 
-	<h2>Update to PHP</h2>
-	<p>
-	  At this point, I'm updating the page to use PHP to make the nav
-	  section easier to maintain and to update the date automatically.
-	</p>
-
-	<h2>Multiple CSS Stylesheets</h2>
-	<p>
-	  At this point, I'm reverting the
-	  <a href="https://simplecss.org/">simple.css stylesheet</a>
-	  to its original state and using a separate customization.css
-	  file to override it. Current overrides include the blue color
-	  scheme, the cursive font on Tilly's graduation page, and the
-	  sticky headers (though I'm not sure I like the sticky headers).
-	</p>
-	<p>
-	  I'm not sure if this is better, but it gives me the
-	  chance to try both methods of controlling the appearance of my site.
-	  It also allows me to update the styles for the newer blog entries
-	  while leaving the styling of the older pages static. This preserves
-	  the appearance of the older pages, making it more clear how my site
-	  is evolving over time.
-	</p>
-	<p>
-	  I have also considered using the minified and/or
-	  <abbr title="Content Delivery Network">CDN</abbr> version.
-	  However, I felt that was at odds with my desire to have an entirely
-	  self-hosted and human-readable site.
-	</p>
-	<p>
-	  This decision does make some things a bit more difficult, such
-	  as hosting the <i class="fa-solid fa-font-awesome" aria-hidden="true"></i>
-	  <a href="https://docs.fontawesome.com/web/setup/host-yourself/webfonts">
-	    Font Awesome icons (Web Fonts)</a> myself. But I think that it is worth
-	  it to have the site work the way I want it to work.
-	</p>
-
 	<h2>
 	  <i class="fa-solid fa-universal-access" aria-hidden="true"></i>
 	  Accessibility
@@ -95,7 +59,9 @@
 	<p>
 	  If you have trouble accessing any part of the site, please let me know at
 	  <a href="mailto:keydelk@sdf.org">keydelk@sdf.org</a>, and I will attempt to
-	  fix the issue in the next update.
+	  fix the issue in the next update. This email is only used for site maintenance,
+	  and does not accept any pictures or attachments. Personal communications should
+	  be sent to my personal email.
 	</p>
 	<p>🐘 Follow me on <a rel="me" href="https://fosstodon.org/@keydelk">Mastodon</a>
 	<p class="notice">
